@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calcular">Calcular</string>
+    <string name="ingresar_num2">Ingresar num2:</string>
+    <string name="ingresar_num1">Ingresar num1:</string>
+</resources>
