@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private int calcular() {
+    private float calcular() {
 
-        int num1 = Integer.parseInt(txtNum1.getText().toString());
-        int num2 = Integer.parseInt(txtNum2.getText().toString());
+        float num1 = Float.parseFloat(txtNum1.getText().toString());
+        float num2 = Float.parseFloat(txtNum2.getText().toString());
 
         return num1 * num2;
     }
