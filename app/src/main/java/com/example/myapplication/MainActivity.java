@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_calcular.setOnClickListener(v -> {
             Toast.makeText(v.getContext(),
-                    "El producto es: " + calcular(),
+                    setResult(),
                     Toast.LENGTH_LONG).show();
         });
     }
@@ -36,5 +36,9 @@ public class MainActivity extends AppCompatActivity {
         int num2 = Integer.parseInt(txtNum2.getText().toString());
 
         return num1 * num2;
+    }
+
+    private String setResult() {
+        return "El producto es: " + calcular();
     }
 }
