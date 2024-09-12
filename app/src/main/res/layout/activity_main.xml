@@ -92,7 +92,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtNum2" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtResult"
         android:layout_width="365dp"
         android:layout_height="23dp"
         android:layout_marginTop="60dp"

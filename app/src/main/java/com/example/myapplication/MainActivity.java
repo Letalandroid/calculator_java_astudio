@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_calcular;
     EditText txtNum1;
     EditText txtNum2;
+    TextView txtResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +23,12 @@ public class MainActivity extends AppCompatActivity {
 
         txtNum1 = findViewById(R.id.txtNum1);
         txtNum2 = findViewById(R.id.txtNum2);
+        txtResult = findViewById(R.id.txtResult);
         btn_calcular = findViewById(R.id.button);
+        txtResult.setText("");
 
         btn_calcular.setOnClickListener(v -> {
+            txtResult.setText(setResult());
             Toast.makeText(v.getContext(),
                     setResult(),
                     Toast.LENGTH_LONG).show();
